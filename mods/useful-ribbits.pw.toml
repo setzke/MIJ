@@ -1,0 +1,13 @@
+name = "Useful Ribbits"
+filename = "useful_ribbits-1.0.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b33f4b49c74fb237f17683b159998597521d3725"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6919387
+project-id = 1328119

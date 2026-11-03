@@ -1,0 +1,13 @@
+name = "Cursed Fog"
+filename = "Cursed Fog - V1.0.10.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1a46478d3b318a2e5887ae0187c3e72789c94729"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8930421
+project-id = 1159841

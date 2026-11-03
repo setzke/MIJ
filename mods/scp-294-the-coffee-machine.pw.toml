@@ -1,0 +1,13 @@
+name = "SCP-294, The Coffee Machine"
+filename = "CoffeeMachine-forge-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e46893dd8e41d87e22937d765aa5b37b5dc00ea6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7143003
+project-id = 1371239

@@ -1,0 +1,13 @@
+name = "SCP-662, Butler's Hand Bell"
+filename = "ButlersHandBell-forge-1.20.1-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ee0ab769e79b766f9a36d156eddc97449c9487c2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7348794
+project-id = 1401586

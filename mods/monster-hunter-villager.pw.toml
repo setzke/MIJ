@@ -1,0 +1,13 @@
+name = "Monster Hunter Villager"
+filename = "Monster Hunter Villager 1.2.1-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "acf246183fece255bcf17dde9001f4abdda6bacc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5568033
+project-id = 936647

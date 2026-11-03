@@ -1,0 +1,13 @@
+name = "SCP-500, Panacea"
+filename = "Panacea-forge-1.20.1-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "19c49862d5a1931303a65837b23437233e68acca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7074206
+project-id = 1315599

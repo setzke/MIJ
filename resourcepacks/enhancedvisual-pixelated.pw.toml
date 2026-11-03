@@ -1,0 +1,13 @@
+name = "EnhancedVisual Pixelated"
+filename = "Pixelated_v1.3.4_EnhancedVisuals(nox_cgt).zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b9c2af377c216f90af7ce4ee370937b53fea3d74"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6275492
+project-id = 758265

@@ -1,0 +1,13 @@
+name = "Traveler's Backpack"
+filename = "travelersbackpack-forge-1.20.1-9.1.40.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bb74c9bb85af3b6465cf0df7e63559af916a96c2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6887730
+project-id = 321117

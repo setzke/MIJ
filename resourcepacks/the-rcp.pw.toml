@@ -1,0 +1,13 @@
+name = "The Rename Compat Project [Over 300 Mods Supported!]"
+filename = "Rename Compat Project.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eea20f7e9e072fcb3276a01374896025f4903022"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6833693
+project-id = 1242659

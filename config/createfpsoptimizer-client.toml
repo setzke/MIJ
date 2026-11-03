@@ -1,0 +1,45 @@
+
+#Create: FPS Optimizer client settings
+[optimization]
+	enabled = true
+	#Range: 20 ~ 240
+	targetFps = 60
+	#Range: 16 ~ 256
+	blockEntityRenderDistance = 64
+	#Range: 32 ~ 512
+	contraptionRenderDistance = 128
+	#Range: 50 ~ 20000
+	createParticlesPerSecond = 1200
+	#Range: 8 ~ 256
+	createParticleDistance = 48
+	blockEntityCulling = true
+	contraptionCulling = true
+	particleLimiter = true
+	adaptiveAnimationUpdates = true
+	fastFlywheelLighting = true
+	denseFactoryOptimization = true
+	#Range: 128 ~ 10000
+	factoryVisualBudget = 768
+	#Apply safe rendering optimizations to detected Create addons.
+	createAddonOptimizations = true
+	#Reuse identical render visibility decisions during the same frame.
+	renderDecisionCache = true
+	#Exclude Sable/Aeronautics sub-levels from this mod's distance culling, animation throttling and particle limits.
+	#Also preserve Flywheel's configured lighting when Sable is installed, since that setting is global.
+	#Has no effect if Sable is absent; fixed-world optimizations remain active.
+	excludeSableSubLevels = true
+
+#Optional rendering optimizations used only while an Oculus/Iris shader pack is active.
+[shaders]
+	enabled = true
+	#Range: 16 ~ 256
+	blockEntityRenderDistance = 48
+	#Range: 32 ~ 512
+	contraptionRenderDistance = 96
+	#Range: 16 ~ 256
+	shadowBlockEntityDistance = 40
+	#Range: 32 ~ 512
+	shadowContraptionDistance = 80
+	#Range: 10 ~ 100
+	particleBudgetPercent = 65
+

@@ -1,0 +1,13 @@
+name = "Sons Of Sins"
+filename = "sons-of-sins-1.20.1-2.1.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0b4ef5113c0fcd2f262bbcbd874df3a78da10980"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6757158
+project-id = 538529

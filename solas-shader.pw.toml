@@ -1,0 +1,13 @@
+name = "Solas Shader"
+filename = "Solas Shader V3.8.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e2a5ded8e3061fa1bbf12e828a9992044c88fa62"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9184339
+project-id = 678384

@@ -1,0 +1,13 @@
+name = "Alagard Font"
+filename = "Alagard Font.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2dea4d9281da5e67c5dfb4e829e8c353c171e422"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4686006
+project-id = 899655

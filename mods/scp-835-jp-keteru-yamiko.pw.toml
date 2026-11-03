@@ -1,0 +1,13 @@
+name = "SCP-835-JP, Keteru Yamiko"
+filename = "KeteruYamiko-forge-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ffe35dd47ee5c3257f75920be1bb2a1cac4dc2f6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7459263
+project-id = 1429439

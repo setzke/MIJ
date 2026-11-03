@@ -1,0 +1,13 @@
+name = "Underlay"
+filename = "underlay-1.20.1-v0.9.7-f.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "acd5a1b3d7a010f65e25f581d9ee55a65e4d8c32"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6948801
+project-id = 1263531

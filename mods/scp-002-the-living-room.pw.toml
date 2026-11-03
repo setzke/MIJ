@@ -1,0 +1,13 @@
+name = "SCP-002, The Living Room"
+filename = "LivingRoom-forge-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d9709ba929d532b057c873d55d9ac36e1436d264"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7165409
+project-id = 1375093

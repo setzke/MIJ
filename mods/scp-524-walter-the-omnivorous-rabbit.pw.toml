@@ -1,0 +1,13 @@
+name = "SCP-524, Walter the Omnivorous Rabbit"
+filename = "WalterTheOmnivorousRabbit-forge-1.20.1-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d16994f961478e713d4bfc40f98acaf59098d18b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7716760
+project-id = 1462756

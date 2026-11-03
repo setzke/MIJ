@@ -1,0 +1,13 @@
+name = "Fasten [An Ashen compatibility pack]"
+filename = "Fasten_FNRoC_1.20.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e6e3dbb290c4f7697575d734de7954a9ed2ecbbe"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6163389
+project-id = 1194632

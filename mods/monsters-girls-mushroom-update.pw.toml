@@ -1,0 +1,13 @@
+name = "Monsters&Girls- legacy"
+filename = "MonstersGirls_1.3.4.3_1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "422e7f88686f74a84116785ddf55622b4b22eb4b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7071708
+project-id = 592109

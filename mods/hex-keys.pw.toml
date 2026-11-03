@@ -1,0 +1,13 @@
+name = "Hex Keys"
+filename = "hexkeys-forge-1.20.1-0.1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d28da77f3bd99398b5ed0fc42ea5668a9fa37b63"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7926130
+project-id = 977129

@@ -1,0 +1,13 @@
+name = "Ashen + Fear Nightfall: Remains of Chaos"
+filename = "Ashen_FN_Remains_of_Chaos.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "06010560154dbec5649b5182e952b2ef7de0e468"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5863413
+project-id = 1128265

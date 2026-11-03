@@ -1,0 +1,13 @@
+name = "VHS Overlay"
+filename = "VHS Overlay 2.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "68abd2f6a07664316c4e50f439a33b85927b6191"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8692258
+project-id = 1270940

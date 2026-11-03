@@ -1,0 +1,13 @@
+name = "Create: Nuka Cola Classic"
+filename = "create_nuka_cola_classic-2.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f01e67236dab0b8c5622ef3eab8730377821ee39"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6560417
+project-id = 1027019

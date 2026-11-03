@@ -1,0 +1,13 @@
+name = "NukaCraft: Fallout Mod"
+filename = "nukacraft-1.20.1-1.19.8-alpha.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1e27a036f295215de6889ffa4fca73ae06d0aa68"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8603604
+project-id = 958467

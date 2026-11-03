@@ -1,0 +1,13 @@
+name = "SCP-650, The Startling Statue"
+filename = "StartlingStatue-forge-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "326922d93c9c1f8b96ebcb071c2e5d7c6dc9624c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6963397
+project-id = 1341083

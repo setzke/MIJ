@@ -1,0 +1,13 @@
+name = "Anti Creeper Harm"
+filename = "consentmod-1.20.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ac907d17480adbbe82a87238a03683f472e1b173"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8053224
+project-id = 1478974

@@ -1,0 +1,13 @@
+name = "Create: FPS Optimizer"
+filename = "Create-FPS-Optimizer-Forge-1.20.1-4.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f6b37e491a0ee686777e4fe2bec4a78be965cb7d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8817424
+project-id = 1658989

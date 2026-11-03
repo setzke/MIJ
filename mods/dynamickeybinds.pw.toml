@@ -1,0 +1,13 @@
+name = "DynamicKeybinds"
+filename = "dynamickeybinds-forge-1.20.1-0.1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7efb6830876b877a1a400cefbdff881c565fdbda"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7926483
+project-id = 1495267

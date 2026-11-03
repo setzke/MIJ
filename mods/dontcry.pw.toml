@@ -1,0 +1,13 @@
+name = "DontCry (Horror)(Don'tCry)(Stalker) (Terror) (Scary)(Twixxel)"
+filename = "dontcry-more__spawnrates.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "df669bbded9235079372bc6711f04ec17ac546f6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8422159
+project-id = 1566054

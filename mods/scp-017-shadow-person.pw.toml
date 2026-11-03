@@ -1,0 +1,13 @@
+name = "SCP-017, Shadow Person"
+filename = "ShadowPerson-forge-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5f2ec0e138174fa25209831a4e7159703765cb02"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6887972
+project-id = 1327450

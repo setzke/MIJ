@@ -1,0 +1,13 @@
+name = "SCP-207, Cola Bottle"
+filename = "ColaBottle-forge-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6b77e678c8556d05eaf2e8c7cf6b6113ef5ff649"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6924939
+project-id = 1334184

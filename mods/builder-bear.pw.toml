@@ -1,0 +1,13 @@
+name = "SCP-1048, The Builder Bear"
+filename = "BuilderBear-forge-1.20.1-1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4d12e8f752b3c2ffb4bbc08b1facf77c2f66b0b4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6679334
+project-id = 1031484

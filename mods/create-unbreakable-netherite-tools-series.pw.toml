@@ -1,0 +1,13 @@
+name = "Create: Unbreakable series"
+filename = "Create Unbreakable Netherite Tools Series 2 Forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7bc26c7efcfba513d7154e7335489565713982f6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8725602
+project-id = 1543158

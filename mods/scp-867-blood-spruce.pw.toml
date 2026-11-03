@@ -1,0 +1,13 @@
+name = "SCP-867, Blood Spruce"
+filename = "BloodSpruce-forge-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e7e20847d67887ba4613d662776b8a94a4f39218"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7651853
+project-id = 1466951

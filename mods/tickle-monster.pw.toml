@@ -1,0 +1,13 @@
+name = "SCP-999, Tickle Monster"
+filename = "TickleMonster-forge-1.20.1-1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4e09325b3985568c291bfd88e7f38c46317235f9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6676637
+project-id = 1016230

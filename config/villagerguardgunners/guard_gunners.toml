@@ -1,0 +1,403 @@
+# Don't change this! Version used to track needed updates.
+version = 22
+# Enable gun combat, natural gun loadouts, command movement, squad patrols, village discovery, initial guard staffing, automatic defense duties, and Village Armory resupply. Medical treatment, Quartermaster service, and building generation have separate switches.
+enabled = true
+
+# One-time gun and ammo loadouts for new guards. Requires Combat and Village AI. This equips guards; Initial Village Guards controls their numbers. Existing guards are not re-equipped when settings change.
+
+[naturalLoadouts]
+# Allow eligible newly spawned guards to replace their initial weapon with a datapack-defined TaCZ loadout.
+enabled = true
+# Choose which initial spawn origins can receive automatic loadouts. Only structure spawning is enabled by default.
+enabledSpawnSources = [
+    "STRUCTURE"
+]
+# Protect equipment from other mods by replacing only a guard's initial crossbow.
+replaceCrossbowsOnly = true
+# Radius around each new guard used to count guards with this add-on’s automatic gun loadouts, including recorded guards in unloaded chunks. Manually equipped guards do not count.
+nearbyCapRadius = 64.0
+# Allow datapack pools to issue weapons TaCZ identifies as explosive. All native blast safety remains active.
+allowExplosiveWeapons = false
+
+[naturalLoadouts.easy]
+# Chance for a new guard to receive a gun loadout: 0 = 0%, 0.5 = 50%, 1 = 100%. The nearby automatic-gunner cap, spawn-source rules, and available loadout pool still apply.
+upgradeChance = 0.35
+# Maximum guards with automatic gun loadouts within Automatic Gunner Count Radius. Set to 0 to disable automatic loadouts for this difficulty. This is not a cap on all guards or manually supplied guns.
+maximumNearby = 1
+# Datapack loadout pool for this difficulty, such as villagerguardgunners:normal. Use a namespaced pool ID; missing or invalid pools leave the guard’s starting equipment unchanged.
+poolId = "villagerguardgunners:easy"
+
+[naturalLoadouts.normal]
+# Chance for a new guard to receive a gun loadout: 0 = 0%, 0.5 = 50%, 1 = 100%. The nearby automatic-gunner cap, spawn-source rules, and available loadout pool still apply.
+upgradeChance = 0.5
+# Maximum guards with automatic gun loadouts within Automatic Gunner Count Radius. Set to 0 to disable automatic loadouts for this difficulty. This is not a cap on all guards or manually supplied guns.
+maximumNearby = 2
+# Datapack loadout pool for this difficulty, such as villagerguardgunners:normal. Use a namespaced pool ID; missing or invalid pools leave the guard’s starting equipment unchanged.
+poolId = "villagerguardgunners:normal"
+
+[naturalLoadouts.hard]
+# Chance for a new guard to receive a gun loadout: 0 = 0%, 0.5 = 50%, 1 = 100%. The nearby automatic-gunner cap, spawn-source rules, and available loadout pool still apply.
+upgradeChance = 0.65
+# Maximum guards with automatic gun loadouts within Automatic Gunner Count Radius. Set to 0 to disable automatic loadouts for this difficulty. This is not a cap on all guards or manually supplied guns.
+maximumNearby = 2
+# Datapack loadout pool for this difficulty, such as villagerguardgunners:normal. Use a namespaced pool ID; missing or invalid pools leave the guard’s starting equipment unchanged.
+poolId = "villagerguardgunners:hard"
+
+# Server-authoritative limits for temporary commands and saved patrol-route execution.
+
+[squads]
+# Maximum distance from the issuing player to loaded squad members that can receive a command. Farther or unloaded members keep their current orders.
+commandDispatchRadius = 48.0
+# Hard limit on authorized squad members changed by one command.
+maximumAffectedGuards = 32
+# Lifetime in ticks for Rally, Defend, Hold, and Fall Back commands. 20 ticks = 1 second at normal game speed.
+positionalCommandDurationTicks = 1200
+# Lifetime in ticks for Focus Target commands. 20 ticks = 1 second at normal game speed.
+focusCommandDurationTicks = 400
+# Distance guards can move from a Defend command point.
+defendRadius = 12.0
+# Distance ahead of you used to choose a command point when you issue Rally, Defend, Hold, or Fall Back while looking into the air.
+airCommandRange = 32.0
+# Allow guards to follow routes saved with a Squad Command Ledger. Requires Combat and Village AI. Routes stay saved and editable when this is off. Automatic village patrols and building defense posts use separate switches.
+patrolRouteExecution = true
+# Navigation speed modifier while guards follow squad patrol routes. A speed factor: 1 uses the guard’s normal movement speed, 0.5 uses half. This is not blocks per second.
+patrolMovementSpeed = 0.8
+# Ticks a guard pauses after reaching a patrol waypoint before continuing. 20 ticks = 1 second at normal game speed.
+patrolWaypointDwellTicks = 20
+# Failed or stalled path attempts allowed before a guard skips one unreachable waypoint.
+patrolMaximumFailuresPerWaypoint = 3
+
+# Automatic patrols cover ordinary villages as well as villages with Village Defense Buildings. Fixed defense posts and saved squad routes use separate controls. Readiness durations apply at the next state transition.
+
+[villageDefense]
+# Send available village residents around outdoor patrol areas, including ordinary villages. Requires Combat and Village AI. Guards need a weapon and at least half health. Manual squads, follow/hold/patrol orders, and other work take priority. Does not spawn or equip guards. Off by default.
+automaticCoverage = false
+# Assign available guards to fixed posts at generated Village Defense Buildings. Requires Combat and Village AI. This is separate from automatic village patrols and saved squad routes. Turning it off preserves saved buildings and orders.
+automaticDuties = true
+# Quiet ticks after a bell before the village returns from Watch to Peace. 20 ticks = 1 second at normal game speed.
+watchDurationTicks = 600
+# Quiet ticks after a confirmed threat before the village enters Recovery. 20 ticks = 1 second at normal game speed.
+alertDurationTicks = 1200
+# Quiet time after Alert before the village returns to Peace. This is village readiness, not medical recovery. Existing deadlines keep their starting duration. 20 ticks = 1 second at normal game speed.
+recoveryDurationTicks = 600
+# Navigation speed modifier while guards travel to automatic defense posts. A speed factor: 1 uses the guard’s normal movement speed, 0.5 uses half. This is not blocks per second.
+dutyMovementSpeed = 0.8
+
+# Size the initial guard allowance in new villages. Guard counts and automatic gun loadouts are separate: a village can have more guards than automatically issued guns. Later deaths do not trigger replacement guards.
+
+[villagePopulation]
+# Size initial guard numbers in new villages, including ordinary villages. Requires Combat and Village AI. Existing villages keep their guards; deaths do not trigger replacements. Spawn sites and Guard Villagers settings can limit the actual count. Off by default.
+managedGeneration = false
+# Lower limit for the size-based initial target. Must not exceed Maximum Initial Guard Target. Valid spawn sites can limit the actual count. Requires Scale Initial Guards to Village Size.
+minimumGuards = 2
+# Upper limit for initial ordinary guards and building garrisons together. Must be at least Minimum Initial Guard Target. For a zero managed target, set both limits to 0. Does not limit player-created guards. Requires Scale Initial Guards to Village Size.
+maximumGuards = 16
+# Add one to the initial target per this many classified residences, rounded up. Higher values give fewer guards. Later beds do not increase the allowance. Requires Scale Initial Guards to Village Size.
+homesPerGuard = 3
+# Add one to the initial target per this many occupied horizontal 32 × 32 block cells, rounded up. Cells contain classified house or defense-building centers; roads alone do not count. Higher values give fewer guards. Requires Scale Initial Guards to Village Size.
+areasPerGuard = 2
+# Maximum added to the initial target by buildings that can generate garrisons, at one guard per building. The maximum village target still applies. Requires Scale Initial Guards to Village Size.
+defenseBonusCap = 2
+# Add this many to the initial target on Hard difficulty, within Maximum Initial Guard Target. Other difficulties get no extra bonus. Requires Scale Initial Guards to Village Size.
+hardDifficultyBonus = 0
+# Count these exact structure template IDs as residences, up to 128 entries. Guard Villagers must also permit guard spawns in those templates. Example: minecraft:village/plains/houses/plains_small_house_1. Requires Scale Initial Guards to Village Size.
+residentialTemplates = [  ]
+
+# Treat injured guards and optionally rescue downed guards. Server permissions below work together with each guard’s Medic Duty and Medical Retreat controls. Timings affect new treatment actions; ongoing actions keep their starting duration.
+
+[medical]
+# Allow manual treatment and medic care. Supplies remain accessible when this is off. Disabling treatment moves existing downed or stabilized guards into recovery.
+enabled = true
+# Allow guards with Medic Duty on to treat nearby allied guards. Requires Enable Medical Treatment and supplies in the medic’s pouch. Each guard starts with Medic Duty off.
+medicAi = true
+# Allow guards with Medical Retreat on to seek a safe medic at 35% health or less and resume normal behavior at 75%. Requires Medical Treatment and Medic Duty to be allowed. Individual guards start with retreat off; player movement orders take priority.
+retreat = true
+# Allow two-dose rescue after lethal injuries: the first dose stabilizes and the second revives. Requires Medical Treatment and valid treatment supplies. Some damage bypasses downing. Off by default; disabling it moves existing casualties into recovery.
+downed = false
+# Enable cot and field revival timings below. Requires Medical Treatment and Downed Guards. Carrying additionally requires Medic Duty to be allowed, a supplied medic, a free nearby Recovery Cot, and a usable route. Manual revival remains available when medic AI is off.
+transport = false
+# Time for the second dose to revive a stabilized guard on a Recovery Cot. Default: 40 ticks = 2 seconds. Requires Medical Treatment, Downed Guards, and Cot Care and Transport. Does not change ordinary healing or the first stabilization dose. Travel, assessment, and dose cooldowns add time. 20 ticks = 1 second at normal game speed.
+cotRevivalTicks = 40
+# Time for the second dose to revive a stabilized guard away from a cot. Default: 160 ticks = 8 seconds. Uses the larger of this value and Cot Revival Treatment Time. Requires Medical Treatment, Downed Guards, and Cot Care and Transport. Does not change ordinary healing or the first stabilization dose. Travel, assessment, and dose cooldowns add time. 20 ticks = 1 second at normal game speed.
+fieldRevivalTicks = 160
+# Rest after revival on a Recovery Cot before returning to duty; this is not time to full health. Default: 100 ticks = 5 seconds. A blocked exit can extend the stay. Requires Medical Treatment, Downed Guards, and Cot Care and Transport. Does not change ordinary healing or the first stabilization dose. Travel, assessment, and dose cooldowns add time. 20 ticks = 1 second at normal game speed.
+cotRecoveryTicks = 100
+# Rest after revival away from a cot before returning to duty; this is not time to full health. Default: 400 ticks = 20 seconds. Uses the larger of this value and Rest After Cot Revival. Requires Medical Treatment, Downed Guards, and Cot Care and Transport. Does not change ordinary healing or the first stabilization dose. Travel, assessment, and dose cooldowns add time. 20 ticks = 1 second at normal game speed.
+fieldRecoveryTicks = 400
+
+# Target acquisition, range, and aiming settings. TaCZ still controls each weapon's statistics.
+
+[combat]
+# Base time a guard must see its target before firing. The active tactical profile can add or subtract time; the result stays between 0 and 40 ticks. Setting this to 0 does not remove a profile’s added delay. 20 ticks = 1 second at normal game speed.
+requiredVisibleTicks = 5
+# Maximum distance at which a guard can fire, in blocks. TaCZ effective range still controls the guard's preferred combat distance and damage falloff.
+maximumEngagementRange = 32.0
+# Base distance at which the guard tries to retreat from a close target. The active tactical profile multiplies this distance, and explosive guns also require safe blast distance.
+closeRangeDistance = 4.0
+# Maximum difference between the guard’s facing direction and its intended target direction before firing. Smaller values require closer alignment. Tactical profiles adjust this threshold within 1–45 degrees. This does not add aim error or change gun spread.
+aimToleranceDegrees = 10.0
+
+# Adjust guard aim error and aim point. Player overrides apply only when enabled.
+
+[combat.aiming]
+# Maximum guard aiming error in degrees before TaCZ applies gun spread. Zero adds no guard error; it does not remove gun spread. This is not a hit percentage.
+errorDegrees = 0.0
+# Eye Level aims at the target's eyes. Center Mass aims at the center of its body bounds and can hit low cover even when the head is visible.
+aimPoint = "EYE_LEVEL"
+# Use separate aim error and aim point for player targets. When off, players inherit the general settings. Does not change which players guards can attack.
+overridePlayers = false
+# Aim error for player targets, used only when Override Against Players is on. Start with 2 degrees and Center Mass, then adjust for your server. Groups of guards can still defeat players quickly.
+playerErrorDegrees = 2.0
+# Aim point for player targets, used only when Override Against Players is on. Center Mass is the recommended starting point for player tuning; low cover can block it.
+playerAimPoint = "CENTER_MASS"
+
+# Navigation behavior while guards are using TaCZ guns
+
+[movement]
+# Navigation speed modifier while approaching a target. A speed factor: 1 uses the guard’s normal movement speed, 0.5 uses half. This is not blocks per second.
+approachSpeed = 1.0
+# Navigation speed modifier while retreating from a target that is too close. A speed factor: 1 uses the guard’s normal movement speed, 0.5 uses half. This is not blocks per second.
+retreatSpeed = 0.75
+# Navigation speed modifier while finding a safe firing lane. A speed factor: 1 uses the guard’s normal movement speed, 0.5 uses half. This is not blocks per second.
+repositionSpeed = 0.75
+# Ticks before retrying a firing lane blocked by a protected entity. 20 ticks = 1 second at normal game speed.
+friendlyRepositionTicks = 20
+
+# Profile selection and guard behavior controls. These settings do not change TaCZ weapon statistics.
+
+[tactics]
+# Choose a profile for an exact TaCZ gun ID. Explosive safety cannot be disabled by an override.
+gunOverrides = {  }
+
+# Map TaCZ gun type labels to tactical profiles. Keys ignore surrounding whitespace and capitalization; conflicting aliases fall back safely.
+
+[tactics.typeProfiles]
+pistol = "SKIRMISHER"
+smg = "SKIRMISHER"
+rifle = "GENERALIST"
+sniper = "MARKSMAN"
+shotgun = "BREACHER"
+mg = "SUPPORT"
+rpg = "DEMOLITIONS"
+
+[tactics.generalist]
+# Multiply the gun’s TaCZ effective range to choose an approach distance. 1 = unchanged, 0.5 = half, 2 = double. The result stays within the guard’s retreat and maximum firing distances.
+preferredRangeMultiplier = 1.0
+# Multiply Base Combat Retreat Distance. 1 = unchanged, 2 = double. Explosive blast clearance can require more distance; non-explosive movement stays within the firing limit.
+retreatDistanceMultiplier = 1.0
+# Add to or subtract from Base Visibility Delay. Positive values delay firing; negative values shorten the delay. The final delay stays between 0 and 40 ticks. 20 ticks = 1 second at normal game speed.
+visibleTicksAdjustment = 0
+# Multiply Base Aim Tolerance. Smaller values require more precise aim; 0.5 halves the allowed error. Final tolerance stays between 1 and 45 degrees. Does not change gun spread.
+aimToleranceMultiplier = 1.0
+# Also limit firing distance using TaCZ effective range instead of only the global hard cap.
+limitFiringToEffectiveRange = false
+# Multiply TaCZ effective range when Use Effective-Range Firing Limit is on. Has no effect while that option is off. 1 = unchanged, 2 = double; the server and individual guard firing caps still apply.
+maximumFiringRangeMultiplier = 1.0
+
+[tactics.skirmisher]
+# Multiply the gun’s TaCZ effective range to choose an approach distance. 1 = unchanged, 0.5 = half, 2 = double. The result stays within the guard’s retreat and maximum firing distances.
+preferredRangeMultiplier = 0.75
+# Multiply Base Combat Retreat Distance. 1 = unchanged, 2 = double. Explosive blast clearance can require more distance; non-explosive movement stays within the firing limit.
+retreatDistanceMultiplier = 1.0
+# Add to or subtract from Base Visibility Delay. Positive values delay firing; negative values shorten the delay. The final delay stays between 0 and 40 ticks. 20 ticks = 1 second at normal game speed.
+visibleTicksAdjustment = -1
+# Multiply Base Aim Tolerance. Smaller values require more precise aim; 0.5 halves the allowed error. Final tolerance stays between 1 and 45 degrees. Does not change gun spread.
+aimToleranceMultiplier = 1.0
+# Also limit firing distance using TaCZ effective range instead of only the global hard cap.
+limitFiringToEffectiveRange = true
+# Multiply TaCZ effective range when Use Effective-Range Firing Limit is on. Has no effect while that option is off. 1 = unchanged, 2 = double; the server and individual guard firing caps still apply.
+maximumFiringRangeMultiplier = 1.25
+
+[tactics.breacher]
+# Multiply the gun’s TaCZ effective range to choose an approach distance. 1 = unchanged, 0.5 = half, 2 = double. The result stays within the guard’s retreat and maximum firing distances.
+preferredRangeMultiplier = 0.65
+# Multiply Base Combat Retreat Distance. 1 = unchanged, 2 = double. Explosive blast clearance can require more distance; non-explosive movement stays within the firing limit.
+retreatDistanceMultiplier = 1.0
+# Add to or subtract from Base Visibility Delay. Positive values delay firing; negative values shorten the delay. The final delay stays between 0 and 40 ticks. 20 ticks = 1 second at normal game speed.
+visibleTicksAdjustment = 0
+# Multiply Base Aim Tolerance. Smaller values require more precise aim; 0.5 halves the allowed error. Final tolerance stays between 1 and 45 degrees. Does not change gun spread.
+aimToleranceMultiplier = 1.0
+# Also limit firing distance using TaCZ effective range instead of only the global hard cap.
+limitFiringToEffectiveRange = true
+# Multiply TaCZ effective range when Use Effective-Range Firing Limit is on. Has no effect while that option is off. 1 = unchanged, 2 = double; the server and individual guard firing caps still apply.
+maximumFiringRangeMultiplier = 1.1
+
+[tactics.marksman]
+# Multiply the gun’s TaCZ effective range to choose an approach distance. 1 = unchanged, 0.5 = half, 2 = double. The result stays within the guard’s retreat and maximum firing distances.
+preferredRangeMultiplier = 1.0
+# Multiply Base Combat Retreat Distance. 1 = unchanged, 2 = double. Explosive blast clearance can require more distance; non-explosive movement stays within the firing limit.
+retreatDistanceMultiplier = 2.0
+# Add to or subtract from Base Visibility Delay. Positive values delay firing; negative values shorten the delay. The final delay stays between 0 and 40 ticks. 20 ticks = 1 second at normal game speed.
+visibleTicksAdjustment = 3
+# Multiply Base Aim Tolerance. Smaller values require more precise aim; 0.5 halves the allowed error. Final tolerance stays between 1 and 45 degrees. Does not change gun spread.
+aimToleranceMultiplier = 0.65
+# Also limit firing distance using TaCZ effective range instead of only the global hard cap.
+limitFiringToEffectiveRange = false
+# Multiply TaCZ effective range when Use Effective-Range Firing Limit is on. Has no effect while that option is off. 1 = unchanged, 2 = double; the server and individual guard firing caps still apply.
+maximumFiringRangeMultiplier = 1.0
+
+[tactics.support]
+# Multiply the gun’s TaCZ effective range to choose an approach distance. 1 = unchanged, 0.5 = half, 2 = double. The result stays within the guard’s retreat and maximum firing distances.
+preferredRangeMultiplier = 0.9
+# Multiply Base Combat Retreat Distance. 1 = unchanged, 2 = double. Explosive blast clearance can require more distance; non-explosive movement stays within the firing limit.
+retreatDistanceMultiplier = 1.5
+# Add to or subtract from Base Visibility Delay. Positive values delay firing; negative values shorten the delay. The final delay stays between 0 and 40 ticks. 20 ticks = 1 second at normal game speed.
+visibleTicksAdjustment = 1
+# Multiply Base Aim Tolerance. Smaller values require more precise aim; 0.5 halves the allowed error. Final tolerance stays between 1 and 45 degrees. Does not change gun spread.
+aimToleranceMultiplier = 0.8
+# Also limit firing distance using TaCZ effective range instead of only the global hard cap.
+limitFiringToEffectiveRange = false
+# Multiply TaCZ effective range when Use Effective-Range Firing Limit is on. Has no effect while that option is off. 1 = unchanged, 2 = double; the server and individual guard firing caps still apply.
+maximumFiringRangeMultiplier = 1.0
+
+[tactics.demolitions]
+# Multiply the gun’s TaCZ effective range to choose an approach distance. 1 = unchanged, 0.5 = half, 2 = double. The result stays within the guard’s retreat and maximum firing distances.
+preferredRangeMultiplier = 1.0
+# Multiply Base Combat Retreat Distance. 1 = unchanged, 2 = double. Explosive blast clearance can require more distance; non-explosive movement stays within the firing limit.
+retreatDistanceMultiplier = 1.0
+# Add to or subtract from Base Visibility Delay. Positive values delay firing; negative values shorten the delay. The final delay stays between 0 and 40 ticks. 20 ticks = 1 second at normal game speed.
+visibleTicksAdjustment = 3
+# Multiply Base Aim Tolerance. Smaller values require more precise aim; 0.5 halves the allowed error. Final tolerance stays between 1 and 45 degrees. Does not change gun spread.
+aimToleranceMultiplier = 0.65
+# Also limit firing distance using TaCZ effective range instead of only the global hard cap.
+limitFiringToEffectiveRange = false
+# Multiply TaCZ effective range when Use Effective-Range Firing Limit is on. Has no effect while that option is off. 1 = unchanged, 2 = double; the server and individual guard firing caps still apply.
+maximumFiringRangeMultiplier = 1.0
+
+# Server-authoritative firing policy applied after Guard Villagers chooses a target.
+
+[engagement]
+# Choose whether guards follow normal Guard Villagers targets, restrict proactive fire to hostile mobs, retaliate defensively, or hold fire.
+mode = "GUARD_TARGETS"
+# Ticks after an attack during which DEFENSIVE guards can engage the attacker. 20 ticks = 1 second at normal game speed.
+defensiveMemoryTicks = 200
+# Allow these entity types in restricted firing modes if Guard Villagers already selects them as targets. Does not make guards search for them. Hold Fire, target exclusions, and ally protection still take priority. Example: minecraft:zombie.
+additionalTargets = [  ]
+# Prevent guards from targeting these entity types with guns. Takes priority over Additional Allowed Target Types. Example: minecraft:creeper. This is a targeting rule, not general protection from stray shots.
+excludedEntities = [  ]
+
+# Friendly-fire clearance settings. Core friendly-fire protection stays active.
+
+[safety]
+# Extra clearance around protected entities when validating a shot, in blocks.
+baseClearance = 0.75
+# Prevent guard-owned TaCZ projectile explosions from destroying blocks while retaining their native effects on hostile entities.
+preserveBlocksFromGuardExplosions = true
+# Multiply the resolved TaCZ explosion radius when calculating the guard's required minimum firing distance.
+explosiveStandoffRadiusMultiplier = 2.0
+# Additional blocks added after the explosion-radius multiplier when calculating minimum firing distance.
+explosiveStandoffAdditionalBlocks = 4.0
+
+# Entity tags, explicit type lists, ownership, and team controls shared by every guard-gun safety layer.
+
+[safety.allies]
+# Protect living mobs that have an owner, including pets belonging to other players and compatible modded mobs. Types listed under Remove Ally Protection for These Types are excluded.
+protectOwnedEntities = true
+# Protect living entities Minecraft considers allied to the guard, including entities on the same scoreboard team.
+protectAlliedEntities = true
+# Namespaced living entity type IDs to protect in addition to the guard_allies datapack tag.
+additionalProtectedEntities = [  ]
+# Remove protection from the listed entity types, including protection from tags, villager/golem status, ownership, teams, and compatible mods. Guards and the shooter’s owner stay protected. This does not automatically make an entity a target.
+excludedEntities = [  ]
+
+# Nearby pickup and emergency sharing controls. TaCZ remains authoritative for ammo compatibility and reloading.
+
+[ammunition]
+# Allow guards to collect compatible TaCZ ammo they naturally walk over without pathfinding to it. Requires the mobGriefing game rule to be on and this guard’s Ammo Pickup order to allow it.
+pickupDroppedAmmo = true
+# Maximum passive pickup distance in blocks. Smaller values reduce the area checked around dropped ammo.
+droppedAmmoPickupRadius = 1.5
+# Allow a dry guard to request compatible loose ammo from a nearby eligible guard.
+shareAmmoBetweenGuards = true
+# Maximum emergency sharing distance in blocks. Searches occur only after a guard runs out of compatible reserve ammo.
+ammoSharingRadius = 8.0
+# Spare ammo a donor keeps after sharing, measured in full magazines for the donor’s gun and attachments. Loaded rounds do not count toward this reserve.
+donorReserveMagazines = 1
+# Restrict sharing to guards with the same owner while still allowing two unowned guards to share.
+requireMatchingOwnerForSharing = true
+
+# Automatic ammo resupply from loaded Village Armories. Searches never scan the world or force chunks to load.
+
+[armoryResupply]
+# Let otherwise-idle guards with low spare ammo visit accessible Village Armories in loaded chunks. Requires Combat and Village AI. Quartermaster service is configured separately.
+enabled = true
+# Ticks between staggered ammo-need assessments. Higher values reduce server work but react more slowly. 20 ticks = 1 second at normal game speed.
+checkIntervalTicks = 40
+# Maximum distance for finding Village Armories in loaded chunks. The search does not load distant chunks.
+searchRadius = 48.0
+# Maximum nearby loaded Village Armories checked for one resupply request. A compatible source can be selected from these candidates; Armories beyond this limit are not checked in that search.
+maximumCandidateArmories = 8
+# Request resupply when spare ammo falls below this many magazines for the current gun and attachments. Loaded rounds do not count. 0 disables automatic requests. Must not exceed Target Spare Ammo.
+lowReserveMagazines = 1
+# Desired spare ammo after resupply, measured in magazines using the guard’s current gun and attachments. Must be at least Low-Ammo Trigger. A lower value stops automatic Armory resupply. Loaded rounds are not spare ammo.
+targetReserveMagazines = 3
+# Navigation speed used only while travelling toward an already-reserved Village Armory. A speed factor: 1 uses the guard’s normal movement speed, 0.5 uses half. This is not blocks per second.
+movementSpeed = 0.8
+# Maximum lifetime in ticks of one active ammo request. 20 ticks = 1 second at normal game speed.
+requestLifetimeTicks = 1200
+# Maximum time in ticks that one guard can reserve a specific Armory supply slot. 20 ticks = 1 second at normal game speed.
+reservationLifetimeTicks = 400
+# Delay in ticks after a successful withdrawal before the guard can reassess Armory need. 20 ticks = 1 second at normal game speed.
+successCooldownTicks = 100
+# Delay in ticks after no compatible loaded Village Armory can be selected. 20 ticks = 1 second at normal game speed.
+noSupplyRetryTicks = 200
+# Base delay in ticks after a guard cannot reach a reserved Village Armory. 20 ticks = 1 second at normal game speed.
+unreachableRetryTicks = 200
+
+# Controls separate Watchtower structures in newly generated terrain. Village-integrated Watchtowers are controlled under Village Defense Buildings. Datapacks set placement frequency, guard groups, and starting stock.
+
+[watchtowers]
+# Allow new standalone Village Watchtowers in newly generated terrain. Existing towers and already selected structure starts are preserved. Village-integrated Watchtowers use a separate switch.
+enabled = true
+# Allow guard markers in newly placed Watchtower pieces to create Guard Villagers.
+spawnGuards = true
+# Maximum guards created from one Watchtower guard marker, from 0 through 4.
+maximumGuardsPerPost = 4
+# Allow Armory markers in newly placed Watchtower pieces to create Village Armories.
+placeArmory = true
+# Allow newly generated Watchtower Armories to receive their datapack-defined initial ammo stock.
+stockArmory = true
+# Multiply each new Watchtower guard's normal difficulty-based gun chance once, then clamp the result to 100%. This does not bypass loadout eligibility, nearby caps, datapack pools, inventory limits, or weapon safety. 1 = the base chance; 1.5 = one and a half times that chance. 0 prevents these gun upgrades.
+guardGunChanceMultiplier = 1.5
+
+# Add defense buildings to newly generated villages. Layout switches require reopening the world or restarting the server. Standalone Watchtowers use separate settings; existing villages are preserved.
+
+[villageBuildings]
+# Add enabled defense building types to supported villages. Off by default so you can choose whether to extend village generation. Reopen the world or restart the server for layout changes. Affects newly generated villages; existing villages are preserved.
+enabled = false
+# Allow Barracks when Generate Village Defense Buildings is on. Reopen the world or restart the server for layout changes. Affects newly generated villages; existing villages are preserved.
+barracks = true
+# Allow Village Armory Buildings when Generate Village Defense Buildings is on. Reopen the world or restart the server for layout changes. Affects newly generated villages; existing villages are preserved.
+armories = true
+# Allow Sentry Posts when Generate Village Defense Buildings is on. Reopen the world or restart the server for layout changes. Affects newly generated villages; existing villages are preserved.
+sentryPosts = true
+# Allow Village-Integrated Watchtowers when Generate Village Defense Buildings is on. Standalone Watchtowers use a separate switch. Reopen the world or restart the server for layout changes. Affects newly generated villages; existing villages are preserved.
+integratedWatchtowers = true
+# Allow Training Yards when Generate Village Defense Buildings is on. Reopen the world or restart the server for layout changes. Affects newly generated villages; existing villages are preserved.
+trainingYards = true
+# Allow newly generated Barracks, Sentry Posts, integrated Watchtowers, and Training Yards to create one limited guard group. Existing buildings are never staffed retroactively.
+spawnGarrisons = true
+# Global ceiling from 0 through 4. Sentry Posts remain limited to 1 guard; integrated Watchtowers and Training Yards remain limited to 2.
+maximumGuardsPerBuilding = 4
+# Multiply each new village-garrison guard's difficulty-based gun chance once, then clamp it to 100%. Natural-loadout population, datapack, inventory, and safety gates still apply. 1 = the base chance; 1.5 = one and a half times that chance. 0 prevents these gun upgrades.
+guardGunChanceMultiplier = 3.0
+# Place a public Village Armory storage block inside each new Armory building. Requires Generate Village Defense Buildings. Existing buildings are preserved.
+placeArmoryBlocks = true
+# Fill newly generated village Armories once from their configured datapack loot table. Disabling this still places an empty Armory.
+stockArmories = true
+
+# Scheduling controls. Lower intervals react faster but require more server work.
+
+[performance]
+# Ticks between target visibility samples. Lower values react faster but use more CPU. 20 ticks = 1 second at normal game speed.
+visibilitySampleIntervalTicks = 2
+# Ticks between combat movement decisions. Lower values react faster but use more CPU. 20 ticks = 1 second at normal game speed.
+movementDecisionIntervalTicks = 5
+# Ticks between navigation path recalculations. Lower values respond faster to changes but use more CPU. 20 ticks = 1 second at normal game speed.
+pathRecalculationIntervalTicks = 20
+# Ticks between cached TaCZ gun-data refreshes. 20 ticks = 1 second at normal game speed.
+gunDataRefreshIntervalTicks = 20
+# Retained for existing configurations. Native rounds now check shot safety individually; this setting no longer delays those checks.
+unsafeShotCacheTicks = 2
+# A guard stops and replans after twice this duration without route progress, with a minimum of 20 ticks. 20 ticks = 1 second at normal game speed.
+repositionProgressCheckTicks = 10
