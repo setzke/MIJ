@@ -3388,10 +3388,6 @@ hash = "0433f2c62c91622d93cb7f9eef622ac5498179228158dba5d478f0261e9dc740"
 metafile = true
 
 [[files]]
-file = "icon.png"
-hash = "f864335784585567e600ef654ec64293dcc1acee3c95d6eeba123940da696594"
-
-[[files]]
 file = "insanity-shader.pw.toml"
 hash = "5408f2e2dc93c0ad15ceee15bd6370e1ad052887df7ef1a6c8188fd1a049b3d1"
 metafile = true
@@ -3473,7 +3469,7 @@ metafile = true
 
 [[files]]
 file = "mods/appleskin.pw.toml"
-hash = "6528ab94b68cb66f6fdaa47d18181b4c4e367811b3eee45a4aaf96b6ebc42528"
+hash = "e5301c77635fdd2d066da5a6da01bb4e93e0074b640c8de69a5a79aaa24c5078"
 metafile = true
 
 [[files]]
@@ -5412,6 +5408,10 @@ hash = "393ac463875b2d59f6ab88ce25c62169d2b0a16333f02dac29309f57f2b6968b"
 metafile = true
 
 [[files]]
+file = "profileImage/MIJ.png"
+hash = "f864335784585567e600ef654ec64293dcc1acee3c95d6eeba123940da696594"
+
+[[files]]
 file = "resourcepacks/Quark Programmer Art.zip"
 hash = "41cb720cf256a12ea247b2f38068b363aa5b1675470c4b5aa66850701a78bc4d"
 
@@ -5428,6 +5428,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/ashen-16x.pw.toml"
 hash = "113e9063418fe8985f0ebf201624739a0e90bad683b6cae5106eb92dc2d76bdb"
+metafile = true
+
+[[files]]
+file = "resourcepacks/ashen-appleskin-farmers-delight.pw.toml"
+hash = "c606af1f50da491d4944d375d699546399ce8bc94b0c2c84b4fc7016df66e73c"
 metafile = true
 
 [[files]]
