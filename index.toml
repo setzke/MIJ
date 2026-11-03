@@ -3141,6 +3141,10 @@ file = "config/tectonic.json"
 hash = "763daec074d4c1058c3de57aa3399b0057b813c6d4106f41f021c99fda830085"
 
 [[files]]
+file = "config/teraphobia/fear_nightfall.png"
+hash = "cef8fdc5b7cb9c3702aa037c568ddb46535b130a7940f0862d021295729eac9b"
+
+[[files]]
 file = "config/terrablender.toml"
 hash = "11ef4c2666fa094b456310710c2b5cb8babbd71982d4d187c9a80ad4011d8014"
 
@@ -3382,6 +3386,10 @@ metafile = true
 file = "hysteria-shaders.pw.toml"
 hash = "0433f2c62c91622d93cb7f9eef622ac5498179228158dba5d478f0261e9dc740"
 metafile = true
+
+[[files]]
+file = "icon.png"
+hash = "f864335784585567e600ef654ec64293dcc1acee3c95d6eeba123940da696594"
 
 [[files]]
 file = "insanity-shader.pw.toml"
@@ -5516,6 +5524,10 @@ metafile = true
 file = "resourcepacks/the-rcp.pw.toml"
 hash = "79fa6f4017e8167e1baab8db9db4125a2544955654ee4267fe771f792ee6a17d"
 metafile = true
+
+[[files]]
+file = "server-icon.png"
+hash = "68151c6d6ce26de5a0ed4a9409d3888a069eb0b2b48f3b2c7698c00ea382e18b"
 
 [[files]]
 file = "shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip.txt"
