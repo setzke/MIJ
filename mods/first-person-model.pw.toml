@@ -14,4 +14,4 @@ project-id = 333287
 
 [option]
 optional = true
-description = "Causes crash when holding caged entities, even if disabled via keybinds."
+description = "Causes crash when holding caged entities, even if disabled via keybinds. Still fun to use."
