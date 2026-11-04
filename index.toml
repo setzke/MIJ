@@ -2794,7 +2794,7 @@ hash = "4b851206a6ef68834db70784dd0e14b472d5f2240a167260d83c3de890a12895"
 
 [[files]]
 file = "config/resourcepackoverrides.json"
-hash = "305f3ef568ae962a0e626c2d643d54873c866256d92d2ed6f8ff147d84f13f6e"
+hash = "8effa46614bf0bf62f0158b5670294263b44fff4f0d8db38461f462e1feae484"
 
 [[files]]
 file = "config/ribbits-forge-1_20_1.toml"
