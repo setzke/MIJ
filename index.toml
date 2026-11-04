@@ -3373,23 +3373,8 @@ file = "config/zombieawareness/PlayerRulesAndLists.toml"
 hash = "e766740f523b7da0d0cdc9db47f6e69c16489509c6b5e1eee63742c295f5f508"
 
 [[files]]
-file = "cursed-fog.pw.toml"
-hash = "4887bbfeb11bdd1462ded0d3bee8fd87f57e3b3babf4bfa27fe255dfd52ea056"
-metafile = true
-
-[[files]]
-file = "farmers-delight-cutting-compat.pw.toml"
+file = "datapacks/farmers-delight-cutting-compat.pw.toml"
 hash = "526b58dc5cf491a4ea2656ad516a535883d1f1797b8118224b6568b3aa47ff62"
-metafile = true
-
-[[files]]
-file = "hysteria-shaders.pw.toml"
-hash = "0433f2c62c91622d93cb7f9eef622ac5498179228158dba5d478f0261e9dc740"
-metafile = true
-
-[[files]]
-file = "insanity-shader.pw.toml"
-hash = "5408f2e2dc93c0ad15ceee15bd6370e1ad052887df7ef1a6c8188fd1a049b3d1"
 metafile = true
 
 [[files]]
@@ -5448,11 +5433,6 @@ hash = "557d160e4a3d856c6bbe36c39ee7c6cd42824363690b61d5f23bbac153c8edbc"
 metafile = true
 
 [[files]]
-file = "photon-shader.pw.toml"
-hash = "393ac463875b2d59f6ab88ce25c62169d2b0a16333f02dac29309f57f2b6968b"
-metafile = true
-
-[[files]]
 file = "profileImage/MIJ.png"
 hash = "f864335784585567e600ef654ec64293dcc1acee3c95d6eeba123940da696594"
 
@@ -5615,20 +5595,40 @@ file = "shaderpacks/MakeUp-UltraFast-9.6.zip.txt"
 hash = "9f84e9392b914e242cefd17e1f453c8ff1b43f14d61f5f746b229136721a19b7"
 
 [[files]]
-file = "shaderpacks/§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV93.0§r§l.zip.txt"
-hash = "61fa75284451b22f6f0e85514628b5164c098686c34e232e04030230343197db"
+file = "shaderpacks/cursed-fog.pw.toml"
+hash = "4887bbfeb11bdd1462ded0d3bee8fd87f57e3b3babf4bfa27fe255dfd52ea056"
+metafile = true
 
 [[files]]
-file = "solas-shader.pw.toml"
+file = "shaderpacks/hysteria-shaders.pw.toml"
+hash = "0433f2c62c91622d93cb7f9eef622ac5498179228158dba5d478f0261e9dc740"
+metafile = true
+
+[[files]]
+file = "shaderpacks/insanity-shader.pw.toml"
+hash = "5408f2e2dc93c0ad15ceee15bd6370e1ad052887df7ef1a6c8188fd1a049b3d1"
+metafile = true
+
+[[files]]
+file = "shaderpacks/photon-shader.pw.toml"
+hash = "393ac463875b2d59f6ab88ce25c62169d2b0a16333f02dac29309f57f2b6968b"
+metafile = true
+
+[[files]]
+file = "shaderpacks/solas-shader.pw.toml"
 hash = "a28e4a2a391ef4d843902f79c99ed0154ed7e9dd214dafac5b061838efd17667"
 metafile = true
 
 [[files]]
-file = "supplementaries-compat.pw.toml"
+file = "shaderpacks/supplementaries-compat.pw.toml"
 hash = "ecc40d6563a978de8d6138c5c1c0a959f6cfd18fd5da00c940902b974f8a6b72"
 metafile = true
 
 [[files]]
-file = "vhs-overlay.pw.toml"
+file = "shaderpacks/vhs-overlay.pw.toml"
 hash = "c64061f0fa9aeb42b32fe9cbf5b6d76246f5d778175885cc6ac457b1ec2ee28a"
 metafile = true
+
+[[files]]
+file = "shaderpacks/§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV93.0§r§l.zip.txt"
+hash = "61fa75284451b22f6f0e85514628b5164c098686c34e232e04030230343197db"
