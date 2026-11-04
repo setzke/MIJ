@@ -1,0 +1,13 @@
+name = "EMF Compat: Gliders"
+filename = "emf_compat_gliders_1.20.1_2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e2ed377540d8510b4dcafef9af34c79cf8ca3efd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8793940
+project-id = 1629264

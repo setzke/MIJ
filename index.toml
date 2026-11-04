@@ -3434,7 +3434,7 @@ metafile = true
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
-hash = "394d3301223db53609c7bdfdd16745295125fc25d5ecd723d6471c5b713abfcf"
+hash = "bd9d2555c8ce2d6dbd32a4ba7abb29def6a9baebf865e320399c5681dd2950d2"
 metafile = true
 
 [[files]]
@@ -3605,11 +3605,6 @@ metafile = true
 [[files]]
 file = "mods/biomes-o-plenty.pw.toml"
 hash = "79592259e6f79f078bc8a8cf373682dc4c8b4b7b0ac743fa26509aa4da8c70d2"
-metafile = true
-
-[[files]]
-file = "mods/bisecthosting-server-integration-menu-forge.pw.toml"
-hash = "950f4ae65aa902fc0f05d4976666c133fc7a377d9a8a195e37cae3a98b4f520e"
 metafile = true
 
 [[files]]
@@ -3993,6 +3988,11 @@ hash = "a7ea2ca29b2503f766a35c6c50a42fe035eaf23cf20bbc20a17071e1a09af2ab"
 metafile = true
 
 [[files]]
+file = "mods/distant-horizons-seedgen.pw.toml"
+hash = "a1f10f51d558ef0ff513a6677b219596deaadc1b01277c66225c11b3bd69b90e"
+metafile = true
+
+[[files]]
 file = "mods/distant-horizons.pw.toml"
 hash = "887ed2e25880009d1fac1c8522b10cda7da02e61962b17132f4777c2fd87a8a8"
 metafile = true
@@ -4093,6 +4093,56 @@ hash = "c94b9427a8d7f0e6aa0a1779c68bde63b98b4adc1968b48adad521f51bde84f3"
 metafile = true
 
 [[files]]
+file = "mods/emf-compat-better-combat.pw.toml"
+hash = "bca1ee2fb8e314ccc1846a0a89bd6cd780e48dc9d45234e9b7d8faf709f15689"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-carry-on.pw.toml"
+hash = "d1dbe1b2286e0ae2a73302adfb10adfeb2486e9d82b43cdf381ce346f9cd1c9d"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-core.pw.toml"
+hash = "7df68ef3c15568272d30b87af3a118b23f6a612e5682d74750b19dc3ed2a8ccc"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-create.pw.toml"
+hash = "0167b9eb7ce117a4b8e52bc170c286354b3248bfc9135099f8a789483d7290ee"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-gliders.pw.toml"
+hash = "8926cb8ac8d9940773a25e904d4a992533adac4da65efdc80539e6b6cbca63e8"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-irons-spells-n-spellbooks.pw.toml"
+hash = "d237a9dc578cf1a61e92271cad2cd0bfef594a539ce87faafcd98b4854f40f44"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-not-enough-animations.pw.toml"
+hash = "45f08b08e8a0f2ef6bd61bec515908a93ab896ef0f412bed4dbfaf606a03ace2"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-quark.pw.toml"
+hash = "e3c3a107f17b65f73587de266654153e36d3e4cd0445a1f09edd265cad1b2a90"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-supplementaries.pw.toml"
+hash = "ee6f31b90105228c64b3b4a9c0f6ba274885bdbd19f7eaaec4bb03d16277e1a5"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-watut.pw.toml"
+hash = "9ce340304ba40a4e2c9054bffe9ffb6486e2314b9659b8aa87dd1c15d303417c"
+metafile = true
+
+[[files]]
 file = "mods/enchantment-descriptions.pw.toml"
 hash = "2f30de9a0d70d37a56c283c98c69e0d264515d5876b7e2a9d78d1f1941692a3f"
 metafile = true
@@ -4109,12 +4159,12 @@ metafile = true
 
 [[files]]
 file = "mods/entity-model-features.pw.toml"
-hash = "efb8a4921c466e737afaa484eca9aedc55c4be1d5647a3b447f961d66482faaf"
+hash = "bf61a0485745011ef2050f3869c12d9c58088f1827fd3c3d1227eab8b982af46"
 metafile = true
 
 [[files]]
 file = "mods/entity-texture-features-fabric.pw.toml"
-hash = "f3e80a5b8992883cdad15ec2e431152ae67c48db3a131a7b1b5ce705da3f89f2"
+hash = "185797e9f6c75a53c95366b75eb136695c9bed180674a24b02abd377acdf2e82"
 metafile = true
 
 [[files]]
@@ -4124,7 +4174,7 @@ metafile = true
 
 [[files]]
 file = "mods/entitymodelshaderfix.pw.toml"
-hash = "644b2fdacc9fdb25297004eeccc91ce7d2c0938021f5abf164b2ce1ce3d1d32a"
+hash = "37d82098917c365c348639b2535c8abdbd2d05ba2ad1e6ca9c9132f6e7b8b809"
 metafile = true
 
 [[files]]
@@ -4205,6 +4255,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "5bd0506bc0be25116b234f2b5af9447f60d82ae1cb6c5be4e12d8841f6c2501c"
+metafile = true
+
+[[files]]
+file = "mods/first-person-model.pw.toml"
+hash = "c0401972be3538713c809bfc19848d55d2d4dac339dd97eacff5fbda9d4ae890"
 metafile = true
 
 [[files]]
@@ -4389,7 +4444,7 @@ metafile = true
 
 [[files]]
 file = "mods/immersive-lanterns.pw.toml"
-hash = "bf7857a089345159e9c5742c311d52df0e86fcf57a052b06fb25690fdf160a2f"
+hash = "9902e2b958a4aebdbef9b02b4f319f675989ae9e0a6eb7553c8cf9bf730e2ebd"
 metafile = true
 
 [[files]]
@@ -4413,18 +4468,18 @@ hash = "6ce8a94253349a6fc1032e8bf6e6fb5fcb60ab3c039edd9d89c4b40051a5f809"
 metafile = true
 
 [[files]]
+file = "mods/ioticspellbooks.pw.toml"
+hash = "705de546efcaf92d271566d3c2fa563e5595990872702f76811ca3b03d246bcf"
+metafile = true
+
+[[files]]
 file = "mods/irons-lib.pw.toml"
-hash = "bdfb244a1acd71eabedf498887b0b2103a34c43e66074cb16ac858d5f460ee8f"
+hash = "13fa100328bda217164ab36d53de5a73fe28fcf542eefd0e0a0becb44736ff64"
 metafile = true
 
 [[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
-hash = "4dced2a3e682da6611b0d0929819f549486e8a277f58e495420056cf350319d2"
-metafile = true
-
-[[files]]
-file = "mods/ironsarms.pw.toml"
-hash = "06c8773e1e68895167152d4051020edd654e6ee0e0907b90388755f6171b38e1"
+hash = "dfa508b546489c22a8020b08ffbf587e4d795b4e34e571608eead8db445d66cd"
 metafile = true
 
 [[files]]
@@ -5083,11 +5138,6 @@ hash = "0d61263f4bba1a40d239f3e6db51b364e1f301472e23de106981fbf566ca063c"
 metafile = true
 
 [[files]]
-file = "mods/sodium-embeddium-options-mod-compat.pw.toml"
-hash = "0b927cc6d4a5fd61c5f627ea99334a27751289045a66e7f99069e8f492a7a90d"
-metafile = true
-
-[[files]]
 file = "mods/sodium-options-api.pw.toml"
 hash = "5240c62752415b5d66d4beffec4fe98c253eba8ebcbb2a5c1097fc3ad3de0b00"
 metafile = true
@@ -5436,6 +5486,11 @@ hash = "c606af1f50da491d4944d375d699546399ce8bc94b0c2c84b4fc7016df66e73c"
 metafile = true
 
 [[files]]
+file = "resourcepacks/ashen-appleskin-support.pw.toml"
+hash = "ad161d0528839826eee152ea87cccdd45d96bc48fc62b59c46fc0586e8d50fd2"
+metafile = true
+
+[[files]]
 file = "resourcepacks/ashen-better-end-support.pw.toml"
 hash = "ffc02e485b9323cf1adc4323e1473c85086868e84de5992de28b2e7541ee90cd"
 metafile = true
@@ -5458,6 +5513,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/ashen-regions-unexplored-support.pw.toml"
 hash = "5001ede91b9f95ff42dcc416b5bf0cdde8dab9b864cf0780ead30c90bef45afb"
+metafile = true
+
+[[files]]
+file = "resourcepacks/ashen-ribbits-compat.pw.toml"
+hash = "cf32ecb72e3ee8a06172bade5fb3f0df720795558ec4dfa12eb0d12e84a74a37"
 metafile = true
 
 [[files]]
@@ -5508,6 +5568,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-waystones-texture.pw.toml"
 hash = "07599e31f628e94253326b92317d362f48058d248f99a3d554db3f6deb01fa08"
+metafile = true
+
+[[files]]
+file = "resourcepacks/just-expressions.pw.toml"
+hash = "8b43b79582470b83eb8048a186b229d3c52a0e45a782a31873b6bd663489b001"
 metafile = true
 
 [[files]]

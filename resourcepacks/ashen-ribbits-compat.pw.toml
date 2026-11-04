@@ -1,0 +1,13 @@
+name = "Ashen + Ribbits Compat"
+filename = "Ashen + Ribbits 1.20–1.21.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b0294307406846289d529443bc68ca4ca0d40ef8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8580911
+project-id = 1640122

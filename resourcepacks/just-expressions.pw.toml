@@ -1,0 +1,13 @@
+name = "Just Expressions"
+filename = "JustExpressions_v1.2.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4485a851140d337fa8ecca25939db3be50a3ba59"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8373455
+project-id = 1009214

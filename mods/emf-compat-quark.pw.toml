@@ -1,0 +1,13 @@
+name = "EMF Compat: Quark"
+filename = "emf_compat_quark_1.20.1_1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "08853213b28df521c7f3a1bb202dd670531c76da"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8540669
+project-id = 1605187

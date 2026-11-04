@@ -1,0 +1,13 @@
+name = "Distant Horizons SeedGen"
+filename = "Distant Horizons SeedGen 0.9.1 for 1.20.1 Forge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/iUGLCJTI/versions/E0BvmHIp/Distant%20Horizons%20SeedGen%200.9.1%20for%201.20.1%20Forge.jar"
+hash-format = "sha512"
+hash = "d46642ff4d6d2f898bf23a728b6e00dcbf149e8e52839672eb5b2aab0a5d6fc9a613dd84b6fbaa4047e2163848cbce25e772f87ebfc02653ad5bf68764aef828"
+
+[update]
+[update.modrinth]
+mod-id = "iUGLCJTI"
+version = "E0BvmHIp"

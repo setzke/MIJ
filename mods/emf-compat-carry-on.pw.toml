@@ -1,0 +1,13 @@
+name = "EMF Compat: Carry On"
+filename = "emf_compat_carry_on_forge_1.20.1_2.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d7d4f48a1b616b68310b7ee3a495c44536636935"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9205860
+project-id = 1605159

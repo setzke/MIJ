@@ -1,13 +1,13 @@
 name = "EntityModelShadersFix"
-filename = "entitymodelshaderfix-forge-1.1.0+mc1.20.1.jar"
+filename = "entitymodelshaderfix-forge-1.2.0+mc1.20.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "ca4e83a39845d0a81d126a0d56f1ec99765b40af"
+hash = "4375daccca9b06452dd94828b27ef9b40ebc7a9a"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8171433
+file-id = 9336883
 project-id = 1386866
