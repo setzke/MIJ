@@ -6,3 +6,6 @@
 
 # Exclude github file
 .nojekyll
+
+# Excludes windows folder icon config
+desktop.ini
